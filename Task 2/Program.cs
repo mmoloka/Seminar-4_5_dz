@@ -16,7 +16,7 @@ void PrintArray(int[] arr)
     foreach (int pos in arr)
         Console.Write($"{pos} ");
 }
-int GetSumOfNegativePositions(int[] arr)
+int GetSumOfOddPositions(int[] arr)
 {
     int sum = 0;
     for (int i = 1; i < arr.Length; i += 2)
@@ -27,7 +27,7 @@ int GetSumOfNegativePositions(int[] arr)
 Console.WriteLine("Введите размерность массива: ");
 int length = int.Parse(Console.ReadLine());
 int[] array = CreateArray(length);
-int summ = GetSumOfNegativePositions(array);
+int summ = GetSumOfOddPositions(array);
 
 Console.WriteLine("Полученный массив: ");
 PrintArray(array);
